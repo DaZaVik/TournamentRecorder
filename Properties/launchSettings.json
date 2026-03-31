@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TournamentRecorder (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "TournamentRecorder (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

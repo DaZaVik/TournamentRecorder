@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="TournamentRecorder.Views.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid Padding="24">
+        <Border
+            Padding="24"
+            CornerRadius="24"
+            Background="{StaticResource AppCardBrush}"
+            BorderBrush="{StaticResource AppBorderBrush}"
+            BorderThickness="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            MinWidth="520"
+            MaxWidth="720">
+
+            <StackPanel Spacing="18">
+                <TextBlock
+                    Text="Tournament Recorder"
+                    FontSize="30"
+                    FontWeight="SemiBold"
+                    HorizontalAlignment="Center" />
+
+                <TextBlock
+                    Text="Выберите количество камер для запуска сессии"
+                    HorizontalAlignment="Center"
+                    TextAlignment="Center"
+                    Foreground="{StaticResource AppMutedTextBrush}" />
+
+                <ComboBox
+                    x:Name="CameraCountComboBox"
+                    Header="Количество камер"
+                    SelectedIndex="0">
+                    <ComboBoxItem Content="1 камера" Tag="1" />
+                    <ComboBoxItem Content="2 камеры" Tag="2" />
+                    <ComboBoxItem Content="3 камеры" Tag="3" />
+                    <ComboBoxItem Content="4 камеры" Tag="4" />
+                </ComboBox>
+
+                <Button
+                    x:Name="StartSessionButton"
+                    Content="Начать работу"
+                    Click="StartSessionButton_Click"
+                    HorizontalAlignment="Stretch"
+                    MinHeight="44"
+                    Background="{StaticResource AppAccentBrush}"
+                    Foreground="White" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

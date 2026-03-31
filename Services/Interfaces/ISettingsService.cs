@@ -1,0 +1,2 @@
+﻿using TournamentRecorder.Models;
+namespace TournamentRecorder.Services.Interfaces; public interface ISettingsService { AppSettings CurrentSettings { get; } Task InitializeAsync(); Task SaveAsync(); Task UpdateAsync(AppSettings settings); }

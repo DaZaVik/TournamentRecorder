@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="TournamentRecorder.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <controls:XamlControlsResources />
+            </ResourceDictionary.MergedDictionaries>
+
+            <SolidColorBrush x:Key="AppPageBackgroundBrush" Color="#00000000" />
+            <SolidColorBrush x:Key="AppCardBrush" Color="#CC241A36" />
+            <SolidColorBrush x:Key="AppCardSecondaryBrush" Color="#A62D2046" />
+            <SolidColorBrush x:Key="AppPanelBrush" Color="#8C1B142B" />
+            <SolidColorBrush x:Key="AppBorderBrush" Color="#33F4C0FF" />
+            <SolidColorBrush x:Key="AppAccentBrush" Color="#C66FDC" />
+            <SolidColorBrush x:Key="AppAccentSecondaryBrush" Color="#E3A2D0" />
+            <SolidColorBrush x:Key="AppAccentForegroundBrush" Color="#FFFFFF" />
+            <SolidColorBrush x:Key="AppMutedTextBrush" Color="#BFD7CBE8" />
+            <SolidColorBrush x:Key="AppBannerBrush" Color="#B329203E" />
+            <SolidColorBrush x:Key="AppStatusChipBrush" Color="#22FFFFFF" />
+            <SolidColorBrush x:Key="TitleIconBackgroundBrush" Color="#1AFFFFFF" />
+            <SolidColorBrush x:Key="TitleIconBorderBrush" Color="#22FFFFFF" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

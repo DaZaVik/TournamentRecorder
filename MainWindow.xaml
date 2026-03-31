@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="TournamentRecorder.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    
+
+    <Grid x:Name="WindowRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Кастомный title bar -->
+        <Border
+            x:Name="AppTitleBar"
+            Grid.Row="0"
+            Background="#01000000"
+            BorderBrush="#18FFFFFF"
+            BorderThickness="0,0,0,1">
+
+            <Grid Padding="18,10,12,10" ColumnSpacing="16">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Левая часть -->
+                <StackPanel
+                    Grid.Column="0"
+                    Orientation="Horizontal"
+                    Spacing="12"
+                    VerticalAlignment="Center">
+
+                    <!-- Иконка приложения без жесткой рамки, но с мягкой подложкой -->
+                    <Grid Width="36" Height="36">
+                        <Ellipse
+                            Fill="{StaticResource TitleIconBackgroundBrush}"
+                            Stroke="{StaticResource TitleIconBorderBrush}"
+                            StrokeThickness="1" />
+
+                        <Image
+                            Source="ms-appx:///Assets/app.png"
+                            Width="24"
+                            Height="24"
+                            Stretch="Uniform"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center" />
+                    </Grid>
+
+                    <!-- Текст -->
+                    <StackPanel Spacing="0">
+                        <TextBlock
+                            Text="Tournament Recorder"
+                            FontSize="15"
+                            FontWeight="SemiBold" />
+
+                        <TextBlock
+                            Text="Система записи турнира"
+                            FontSize="12"
+                            Opacity="0.65" />
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Правая часть -->
+                <TextBlock
+                    x:Name="WindowStateTextBlock"
+                    Grid.Column="1"
+                    Text="Готово к работе"
+                    VerticalAlignment="Center"
+                    Opacity="0.65" />
+            </Grid>
+        </Border>
+
+        <!-- Основной контент -->
+        <Border
+            Grid.Row="1"
+            Background="{StaticResource AppPageBackgroundBrush}">
+
+            <Frame x:Name="RootFrameControl" />
+        </Border>
+    </Grid>
+</Window>
