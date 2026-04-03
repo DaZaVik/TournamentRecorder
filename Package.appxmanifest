@@ -11,8 +11,8 @@
 
   <Identity
     Name="588365a4-55e7-48e6-bba1-fd2be98530ff"
-    Publisher="CN=Данила1"
-    Version="0.9.1.0" />
+    Publisher="CN=DaZaVik_PJ"
+    Version="0.9.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="588365a4-55e7-48e6-bba1-fd2be98530ff" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

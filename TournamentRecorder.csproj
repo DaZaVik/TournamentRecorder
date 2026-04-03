@@ -20,7 +20,7 @@
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
 		<AppxBundle>Never</AppxBundle>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-		<PackageCertificateThumbprint>9F2852F759E1B56A5837733C7396968C8A390A8D</PackageCertificateThumbprint>
+		<PackageCertificateThumbprint>023F808768D323D11528E17A85D04966A153A574</PackageCertificateThumbprint>
 		<ApplicationIcon>Assets\app.ico</ApplicationIcon>
 	</PropertyGroup>
 	<ItemGroup>
